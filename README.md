@@ -95,6 +95,8 @@ codezm.workflows.fcs-python
 
 !["codezm.workflows.fcs-python scp use Demo"](scp.gif)
 ### 其他问题
-
+- 原始密码怎么不是原文？
+终端使用的密码是经过 `base64` 编码过的，可通过 `echo "cm9vdHJvb3QK" | base64 --decode` 命令查看原始密码。
 - 如何将 `iTerm` 设为默认 Terminal ？
-  参见 [custom-iterm-applescripts-for-alfred](
+参见 [custom-iterm-applescripts-for-alfred](https://github.com/stuartcryan/custom-iterm-applescripts-for-alfred)
+
