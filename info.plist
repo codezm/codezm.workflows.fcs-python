@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>codezm.workflows.fcs-python</string>
+	<key>connections</key>
+	<dict>
+		<key>04DC4EC1-9B7E-469E-8C95-5CE7D8840B85</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>97A7F67F-47AC-441D-A9F2-AE8EED373DC9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>112690C8-BE6E-47C7-A5B4-076F24D5B2D5</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Delete redis server config.</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7E294C70-5AB5-4500-A1CF-A683295868BE</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy redis server configurate</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>112690C8-BE6E-47C7-A5B4-076F24D5B2D5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>339199DD-38CC-4316-92CB-CD17BD74C767</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3C84A544-6035-4E95-A2E7-0C9552BF9966</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>339199DD-38CC-4316-92CB-CD17BD74C767</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F73BBBCF-8213-4661-8C0B-C242F001AD62</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>43FB7215-3D11-4FFC-9626-D034A7F9B572</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>339199DD-38CC-4316-92CB-CD17BD74C767</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3C84A544-6035-4E95-A2E7-0C9552BF9966</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>481404EF-B9BB-4D6E-8862-643450EF8580</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A112941A-F34A-4F24-9316-E78DBA5BDFEF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5F77B11B-ACC6-4273-9964-D1A307012177</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>F7E938D5-6EE3-4B00-AF3F-7D8472037D41</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4F60D600-E746-4655-8499-B5683950FC5C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>62247309-73FB-473B-AB52-9EC025C797CA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>62247309-73FB-473B-AB52-9EC025C797CA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A112941A-F34A-4F24-9316-E78DBA5BDFEF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7E294C70-5AB5-4500-A1CF-A683295868BE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9E32D9EE-C028-4B2E-B144-7D969AE149C6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3C84A544-6035-4E95-A2E7-0C9552BF9966</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>86111794-CBA8-4C11-BD58-013862A38090</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9E32D9EE-C028-4B2E-B144-7D969AE149C6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3C84A544-6035-4E95-A2E7-0C9552BF9966</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8F2443C8-10EB-4363-8F5B-C00C66EE7601</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B5EACE37-ECAD-4BE7-8BB0-00691FE790EE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>43FB7215-3D11-4FFC-9626-D034A7F9B572</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Delete ssh server config.</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>86111794-CBA8-4C11-BD58-013862A38090</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy ssh server config</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>97A7F67F-47AC-441D-A9F2-AE8EED373DC9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A112941A-F34A-4F24-9316-E78DBA5BDFEF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9E32D9EE-C028-4B2E-B144-7D969AE149C6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F73BBBCF-8213-4661-8C0B-C242F001AD62</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B5EACE37-ECAD-4BE7-8BB0-00691FE790EE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>481404EF-B9BB-4D6E-8862-643450EF8580</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F73BBBCF-8213-4661-8C0B-C242F001AD62</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>codezm</string>
+	<key>description</key>
+	<string>Auto login tools by ssh, it will be open in iterm with the new tab.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Fast Connect Server - Python</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>38</integer>
+				<key>keyword</key>
+				<string>scp</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>$PYTHON_PATH scp.py get "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>scp command by linux, for transform file with in service and local machine.</string>
+				<key>title</key>
+				<string>scp</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4F60D600-E746-4655-8499-B5683950FC5C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>38</integer>
+				<key>script</key>
+				<string>$PYTHON_PATH scp.py execute "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>62247309-73FB-473B-AB52-9EC025C797CA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>A112941A-F34A-4F24-9316-E78DBA5BDFEF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>38</integer>
+				<key>script</key>
+				<string>$PYTHON_PATH redis.py add "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>97A7F67F-47AC-441D-A9F2-AE8EED373DC9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>38</integer>
+				<key>keyword</key>
+				<string>redis</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Waiting for read redis serer list...</string>
+				<key>script</key>
+				<string>$PYTHON_PATH redis.py get "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>use redis-cli to fast connection</string>
+				<key>title</key>
+				<string>redis-cli fast connection</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>04DC4EC1-9B7E-469E-8C95-5CE7D8840B85</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>$PYTHON_PATH redis.py delete "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>112690C8-BE6E-47C7-A5B4-076F24D5B2D5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>$PYTHON_PATH redis.py copy "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7E294C70-5AB5-4500-A1CF-A683295868BE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>message</key>
+					<string>Delete Successful</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>339199DD-38CC-4316-92CB-CD17BD74C767</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>{var:message} Notice!</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>F73BBBCF-8213-4661-8C0B-C242F001AD62</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{query}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>5F77B11B-ACC6-4273-9964-D1A307012177</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>message</key>
+					<string>Copy Successful</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>9E32D9EE-C028-4B2E-B144-7D969AE149C6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>$PYTHON_PATH ssh.py add "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B5EACE37-ECAD-4BE7-8BB0-00691FE790EE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>.* Failed!.*</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>F7E938D5-6EE3-4B00-AF3F-7D8472037D41</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>481404EF-B9BB-4D6E-8862-643450EF8580</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ssh</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>$PYTHON_PATH ssh.py get "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Auto login tools by ssh, it will be open in iterm with the new tab.</string>
+				<key>title</key>
+				<string>ssh</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8F2443C8-10EB-4363-8F5B-C00C66EE7601</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>32</integer>
+				<key>script</key>
+				<string>$PYTHON_PATH ssh.py delete "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>43FB7215-3D11-4FFC-9626-D034A7F9B572</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>3C84A544-6035-4E95-A2E7-0C9552BF9966</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>32</integer>
+				<key>script</key>
+				<string>$PYTHON_PATH ssh.py copy "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>86111794-CBA8-4C11-BD58-013862A38090</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>1</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>ssh </string>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string>codezm</string>
+				<key>hotkey</key>
+				<integer>18</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>1</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.google.Chrome</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>4495C04A-B9EB-4C78-9846-1D015A9A84D3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>1</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>scp </string>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string>codezm</string>
+				<key>hotkey</key>
+				<integer>19</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>2</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.google.Chrome</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>D879CFA4-5CDE-473F-A014-25E639903252</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>1</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>redis </string>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string>codezm</string>
+				<key>hotkey</key>
+				<integer>20</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>3</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.google.Chrome</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>D6F5F445-6169-4C8C-B710-70115E5A2390</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>codezm.workflows.fcs-python
+======================================
+
+## 简介
+
+这是一款由 `Python` 代码编写的 Alfred workflow 插件。用于实现 ssh、redis 服务器管理，借助 ssh、scp、redis-cli 客户端工具实现快速与服务端建立连接。
+
+- **ssh** 管理服务器连接信息，快速与服务器建立连接。
+- **scp** 基于服务器配置信息实现本机与服务器端文件互传。
+- **redis** 管理 redis 服务器连接信息，快速与 redis 服务器建立连接。
+
+!["codezm.workflows.fcs-python use Demo"](demo.gif)
+
+## 使用
+
+[点击下载 alfredworkflow](https://github.com/codezm/codezm.workflows.fcs-python/releases/download/v1.0.0/codezm.workflows.fcs-python.alfredworkflow)
+
+### ssh
+
+默认触发关键字 **ssh**, 可查看已添加服务器列表。
+
+#### 新增服务器配置
+
+新增服务器连接格式:
+
+&gt; ssh add service-name ip-address username password [root-password]
+&gt;
+&gt; 下面以创建服务名 `test`，主机 `127.0.0.1`，用户名：`cat`，密码：`12345`，root密码：`rootroot` 举例：
+&gt;
+&gt; ssh add test 127.0.0.1 cat 12345 rootroot
+
+使用自定义 `ssh` 格式:
+
+&gt; ssh add test ssh -i ~/.ssh/id_rsa  -p 2222 cat@127.0.0.1
+
+#### 管理服务器配置
+
+在使用 ssh、redis 管理服务器配置时，可通过以下指令来管理
+
+1. 按 `Enter` 打开终端并进入自动登录服务器
+2. 按 `Shift + Enter` 删除服务器记录
+3. 按 `Command+Enter` 复制服务器记录
+
+### redis
+
+#### 新增服务器配置
+
+默认触发关键字 **redis**, 可查看已添加服务器列表。
+
+新增 `redis` 服务连接格式：
+
+&gt; redis add service-name ip-address [port] [db] [password]
+&gt;
+&gt; 下面以创建服务名 `test`，主机 `127.0.0.1`，端口号 `6379`，数据库 `15`，密码 `testtest` 举例：
+&gt;
+&gt; redis add test 127.0.0.1 6379 15 testtest
+
+使用自定义 `redis-cli` 格式:
+
+&gt; redis add service-name redis-cli ip-address -h ip-address -p port --pass password
+&gt;
+&gt; 下面以创建服务名 `test`，主机 `127.0.0.1`，端口号 `6379`，数据库 `15`，密码 `testtest` 举例：
+&gt;
+&gt; redis add test redis-cli -h 127.0.0.1 -p 6379 -n 15 --pass testtest
+
+#### 管理服务器配置
+
+详见 `ssh` 管理服务器配置。
+
+### scp
+
+&gt; scp 指令使用 ssh 指令添加的服务器配置，添加、删除服务器配置可通过 ssh 指令完成。
+
+默认触发关键字 **scp**, 可查看已添加服务器列表。
+
+1. scp &lt;输入要检索的服务器&gt;。
+
+2. 选择要互传文件的服务器，按 `Enter`  键。
+
+3. 选择 `Download` 还是 `Upload`，按 `Enter` 键。
+
+   &gt; 要从服务器下载文件则选择 `Download`。
+   &gt;
+   &gt; 要上传文件至服务器则选择 `Upload`。
+
+4. 输入：&lt;服务器文件路径&gt; `Space` &lt;本地文件路径&gt;。
+
+   &gt; ⚠️ 不管选择的是 `Download` 还是 `Upload` &lt;服务器文件路径&gt; 永远在第一个。
+   &gt;
+   &gt; 示例：
+   &gt;
+   &gt; scp test&gt;&gt;&gt;Download&gt;&gt;&gt;/etc/passwd ./
+
+5. 按 `Enter` 键，执行文件互传操作。
+
+!["codezm.workflows.fcs-python scp use Demo"](scp.gif)
+### 其他问题
+
+- 如何将 `iTerm` 设为默认 Terminal ？
+  参见 [custom-iterm-applescripts-for-alfred](</string>
+	<key>uidata</key>
+	<dict>
+		<key>04DC4EC1-9B7E-469E-8C95-5CE7D8840B85</key>
+		<dict>
+			<key>note</key>
+			<string>Use redis-cli command to connection server.</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>435</integer>
+		</dict>
+		<key>112690C8-BE6E-47C7-A5B4-076F24D5B2D5</key>
+		<dict>
+			<key>note</key>
+			<string>Delete redis server configurate.</string>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>450</integer>
+		</dict>
+		<key>339199DD-38CC-4316-92CB-CD17BD74C767</key>
+		<dict>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>640</integer>
+		</dict>
+		<key>3C84A544-6035-4E95-A2E7-0C9552BF9966</key>
+		<dict>
+			<key>xpos</key>
+			<integer>795</integer>
+			<key>ypos</key>
+			<integer>1000</integer>
+		</dict>
+		<key>43FB7215-3D11-4FFC-9626-D034A7F9B572</key>
+		<dict>
+			<key>note</key>
+			<string>Delete connection info!</string>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>950</integer>
+		</dict>
+		<key>4495C04A-B9EB-4C78-9846-1D015A9A84D3</key>
+		<dict>
+			<key>note</key>
+			<string>Keyboard Mapping ssh</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>1150</integer>
+		</dict>
+		<key>481404EF-B9BB-4D6E-8862-643450EF8580</key>
+		<dict>
+			<key>xpos</key>
+			<integer>830</integer>
+			<key>ypos</key>
+			<integer>780</integer>
+		</dict>
+		<key>4F60D600-E746-4655-8499-B5683950FC5C</key>
+		<dict>
+			<key>note</key>
+			<string>Fast upload and download files.</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>5F77B11B-ACC6-4273-9964-D1A307012177</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1120</integer>
+			<key>ypos</key>
+			<integer>730</integer>
+		</dict>
+		<key>62247309-73FB-473B-AB52-9EC025C797CA</key>
+		<dict>
+			<key>note</key>
+			<string>Auto login or insert connection info!</string>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>7E294C70-5AB5-4500-A1CF-A683295868BE</key>
+		<dict>
+			<key>note</key>
+			<string>Copy redis server configurate.</string>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>610</integer>
+		</dict>
+		<key>86111794-CBA8-4C11-BD58-013862A38090</key>
+		<dict>
+			<key>note</key>
+			<string>Copy connection info!</string>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>1140</integer>
+		</dict>
+		<key>8F2443C8-10EB-4363-8F5B-C00C66EE7601</key>
+		<dict>
+			<key>note</key>
+			<string>The auto login script entrance!</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>915</integer>
+		</dict>
+		<key>97A7F67F-47AC-441D-A9F2-AE8EED373DC9</key>
+		<dict>
+			<key>note</key>
+			<string>Auto login or insert connection info!</string>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>9E32D9EE-C028-4B2E-B144-7D969AE149C6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>760</integer>
+		</dict>
+		<key>A112941A-F34A-4F24-9316-E78DBA5BDFEF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1090</integer>
+			<key>ypos</key>
+			<integer>265</integer>
+		</dict>
+		<key>B5EACE37-ECAD-4BE7-8BB0-00691FE790EE</key>
+		<dict>
+			<key>note</key>
+			<string>Auto login or insert connection info!</string>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>760</integer>
+		</dict>
+		<key>D6F5F445-6169-4C8C-B710-70115E5A2390</key>
+		<dict>
+			<key>note</key>
+			<string>Keyboard Mapping redis</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>1440</integer>
+		</dict>
+		<key>D879CFA4-5CDE-473F-A014-25E639903252</key>
+		<dict>
+			<key>note</key>
+			<string>Keyboard Mapping scp</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>1290</integer>
+		</dict>
+		<key>F73BBBCF-8213-4661-8C0B-C242F001AD62</key>
+		<dict>
+			<key>xpos</key>
+			<integer>800</integer>
+			<key>ypos</key>
+			<integer>660</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>PYTHON_PATH</key>
+		<string>/usr/local/bin/python3</string>
+		<key>REDIS_DATA_FILE_NAME</key>
+		<string>data/redis-data.json</string>
+		<key>SSH_DATA_FILE_NAME</key>
+		<string>data/ssh-data.json</string>
+		<key>separator</key>
+		<string> | </string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/codezm/codezm.workflows.fcs-python</string>
+</dict>
+</plist>

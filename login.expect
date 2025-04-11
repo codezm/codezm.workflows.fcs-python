@@ -1,0 +1,69 @@
+#!/usr/bin/expect -f
+set _ssh [lindex $argv 0]
+set passwd  [lindex $argv 1]
+# 超时时间，单位秒。默认10秒
+set timeout 30
+set substring "ssh"
+
+eval spawn $_ssh
+
+if {$passwd != ""} {
+    #set passwd [exec echo $passwd | base64 -d]
+    set passwd [exec /bin/bash -c "echo $passwd | base64 -d 2>/dev/null || echo $passwd"]
+    #puts "password is: $passwd"
+    expect {
+        "yes/no" {
+            send "yes\r";
+            exp_continue
+        }
+        "assword:" {
+            send "$passwd\r"
+        }
+        "*#" {
+            #exit
+            #exp_continue
+            #send "echo 'Hello World!'\r"
+        }
+    }
+}
+
+if {$argc > 2} {
+    set passwd2  [lindex $argv 2]
+    set passwd2 [exec /bin/bash -c "echo $passwd2 | base64 -d 2>/dev/null || echo $passwd2"]
+    send "$passwd2 \r"
+    expect {
+        "*$*" {
+            send "su -\r"
+            expect {
+                "*：" {
+                    send "$passwd2\r"
+                }
+            }
+        }
+    }
+}
+
+#expect {
+#    "closed." {
+#        puts "链接断掉喽..."
+#    }
+#}
+
+interact
+#exec /bin/zsh -i -c "setItermTitle"
+#exec /bin/zsh -c "source ~/.zshrc; setItermTitle"
+#expect eof
+#exec /bin/zsh -c "echo 退出了..."
+
+#expect {
+#"Connection to * closed." {
+    ##puts $passwd
+    ##send "echo 'Hello World!'\r"
+    #puts "链接断掉喽..."
+#}
+#}
+exit
+#set results $expect_out(buffer)
+#if {[regexp -nocase "ssh" $_ssh]} {
+#    interact
+#}
