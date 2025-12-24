@@ -6,7 +6,7 @@ from BaseServer import BaseServer
 
 # 环境变量
 separator = os.environ.get("separator", " | ")
-dataFileName = os.environ.get("REDIS_DATA_FILE_NAME", "data/redis-data.json")
+dataFileName = os.environ.get("REDIS_DATA_FILE_PATH", "data/redis-data.json")
 
 class Server(BaseServer):
     data = []

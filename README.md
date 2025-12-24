@@ -13,7 +13,18 @@ codezm.workflows.fcs-python
 
 ## 使用
 
-[点击下载 alfredworkflow](https://github.com/codezm/codezm.workflows.fcs-python/releases/download/v1.0.0/codezm.workflows.fcs-python.alfredworkflow)
+[点击下载 alfredworkflow](https://github.com/codezm/codezm.workflows.fcs-python/releases/download/v1.0.1/codezm.workflows.fcs-python.alfredworkflow)
+
+## 环境变量
+- PYTHON_PATH: python 可执行脚本路径。
+- REDIS_DATA_FILE_PATH: redis 数据存储路径。
+- SSH_DATA_FILE_PATH: ssh 数据存储路径。
+- TMUX_SESSION_NAME: tmux 会话名称。值不为空时，新的 ssh 连接会加入到 tmux 指定会话中。
+	- 如果 TMUX_SESSION_NAME 不存在，则会自动创建。
+	- 默认将使用自定义服务器名作为 tmux window 命名。
+	- 如果 iTerm 页签没有找到 TMUX_SESSION_NAME，则会自动通过 tmux attach -t TMUX_SESSION_NAME 进入会话，否则将通过 tmux send-keys 创建新的 window 并切换至 iTerm 中标签页名为 TMUX_SESSION_NAME 的页签。
+	- 如果将创建的 window 名已经存在，则将创建新的 iTerm Tab。
+- separator: 分隔符。用于列表展示时标题名称分隔符。
 
 ### ssh
 

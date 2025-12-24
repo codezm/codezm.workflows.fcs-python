@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>codezm.workflows.fcs-python</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>04DC4EC1-9B7E-469E-8C95-5CE7D8840B85</key>
@@ -758,7 +760,7 @@
 				<key>hotkey</key>
 				<integer>18</integer>
 				<key>hotmod</key>
-				<integer>262144</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
 				<string>1</string>
 				<key>leftcursor</key>
@@ -795,7 +797,7 @@
 				<key>hotkey</key>
 				<integer>19</integer>
 				<key>hotmod</key>
-				<integer>262144</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
 				<string>2</string>
 				<key>leftcursor</key>
@@ -832,7 +834,7 @@
 				<key>hotkey</key>
 				<integer>20</integer>
 				<key>hotmod</key>
-				<integer>262144</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
 				<string>3</string>
 				<key>leftcursor</key>
@@ -870,7 +872,17 @@
 
 ## 使用
 
-[点击下载 alfredworkflow](https://github.com/codezm/codezm.workflows.fcs-python/releases/download/v1.0.0/codezm.workflows.fcs-python.alfredworkflow)
+[点击下载 alfredworkflow](https://github.com/codezm/codezm.workflows.fcs-python/releases/download/v1.0.1/codezm.workflows.fcs-python.alfredworkflow)
+## 环境变量介绍
+- PYTHON_PATH: python 可执行脚本路径。
+- REDIS_DATA_FILE_PATH: redis 数据存储路径。
+- SSH_DATA_FILE_PATH: ssh 数据存储路径。
+- TMUX_SESSION_NAME: tmux 会话名称。值不为空时，新的 ssh 连接会加入到 tmux 指定会话中。
+	- 如果 TMUX_SESSION_NAME 不存在，则会自动创建。
+	- 默认将使用自定义服务器名作为 tmux window 命名。
+	- 如果 iTerm 页签没有找到 TMUX_SESSION_NAME，则会自动通过 tmux attach -t TMUX_SESSION_NAME 进入会话，否则将通过 tmux send-keys 创建新的 window 并切换至 iTerm 中标签页名为 TMUX_SESSION_NAME 的页签。
+	- 如果将创建的 window 名已经存在，则将创建新的 iTerm Tab。
+- separator: 分隔符。用于列表展示时标题名称分隔符。
 
 ### ssh
 
@@ -1127,18 +1139,23 @@
 	<key>variables</key>
 	<dict>
 		<key>PYTHON_PATH</key>
-		<string>/usr/local/bin/python3</string>
-		<key>REDIS_DATA_FILE_NAME</key>
+		<string>/usr/bin/python3</string>
+		<key>REDIS_DATA_FILE_PATH</key>
 		<string>data/redis-data.json</string>
-		<key>SSH_DATA_FILE_NAME</key>
+		<key>SSH_DATA_FILE_PATH</key>
 		<string>data/ssh-data.json</string>
+		<key>TMUX_SESSION_NAME</key>
+		<string>remote-server</string>
 		<key>separator</key>
 		<string> | </string>
 	</dict>
 	<key>variablesdontexport</key>
-	<array/>
+	<array>
+		<string>REDIS_DATA_FILE_PATH</string>
+		<string>SSH_DATA_FILE_PATH</string>
+	</array>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/codezm/codezm.workflows.fcs-python</string>
 </dict>

@@ -3,10 +3,13 @@ import re
 import sys
 import os
 from BaseServer import BaseServer
+import subprocess
 
 # 环境变量
+os.environ["PATH"] = "/usr/local/bin:/opt/homebrew/bin:" + os.environ.get("PATH", "")
 separator = os.environ.get("separator", " | ")
-sshDataFileName = os.environ.get("SSH_DATA_FILE_NAME", "data/ssh-data.json")
+sshDataFileName = os.environ.get("SSH_DATA_FILE_PATH", "data/ssh-data.json")
+TMUX_SESSION_NAME = os.environ.get("TMUX_SESSION_NAME", "")
 
 class sshServer(BaseServer):
     data = []
@@ -25,11 +28,63 @@ class sshServer(BaseServer):
             f"/usr/bin/expect {self.workFlowPath}/login.expect",
         ]
 
+    def has_tab_with_session_name(self, name_fragment):
+        """检查是否有标签页的会话名称包含指定字符串"""
+        
+        applescript = f'''
+tell application "iTerm"
+    if (count of windows) = 0 then
+        return false
+    end if
+    
+    repeat with w in windows
+        tell w
+            repeat with aTab in tabs
+                try
+                    if (name of current session of aTab) contains "{name_fragment}" then
+                        return true
+                    end if
+                on error
+                    -- 忽略错误
+                end try
+            end repeat
+        end tell
+    end repeat
+    
+    return false
+end tell
+'''
+        
+        try:
+            result = subprocess.run(['osascript', '-e', applescript],
+                                capture_output=True, text=True, timeout=5)
+            output = result.stdout.strip().lower()
+            return output == "true"
+        except Exception as e:
+            return False
+
     def run(self, methodName, *args, **kwargs):
         method = getattr(self, methodName, None)
         if method and callable(method):
-            result = method(*args, **kwargs)
-            print(result, end='')
+            name, result = method(*args, **kwargs)
+            if TMUX_SESSION_NAME and (methodName == "getByIndex" or methodName == "add"):
+                name = name.replace(".", "_")
+                # check tmux session exist
+                session_check = subprocess.run(["tmux", "has-session", "-t", TMUX_SESSION_NAME], capture_output=True)
+                if session_check.returncode != 0:
+                    # create tmux session
+                    subprocess.run(["tmux", "new-session", "-d", "-s", TMUX_SESSION_NAME])
+                # check tmux window exist
+                window_check = subprocess.run(["tmux", "list-windows", "-t", TMUX_SESSION_NAME, "-F", "#{window_name}"], capture_output=True, text=True)
+                if name not in window_check.stdout.splitlines():
+                    if self.has_tab_with_session_name(TMUX_SESSION_NAME):
+                        print(f"tmux new-window -t {TMUX_SESSION_NAME} -n \"{name}\" && tmux send-keys -t {TMUX_SESSION_NAME}:{name} \"{result}\" Enter && osascript -e 'tell application \"iTerm\" to tell current window to tell current tab to close' && osascript -e 'tell application \"iTerm\"' -e 'tell current window' -e 'repeat with aTab in tabs' -e 'tell aTab' -e 'if (name of current session) contains \"{TMUX_SESSION_NAME}\" then' -e 'select aTab' -e 'exit repeat' -e 'end if' -e 'end tell' -e 'end repeat' -e 'end tell' -e 'end tell'", end='')
+                    else:
+                        print(f"tmux new-window -t {TMUX_SESSION_NAME} -n \"{name}\" && tmux send-keys -t {TMUX_SESSION_NAME}:{name} \"{result}\" Enter && tmux attach -t {TMUX_SESSION_NAME}", end='')
+                else:
+                    print(result, end='')
+            else:
+                print(result, end='')
         else:
             raise AttributeError(f"Method {methodName} not found")
 
@@ -55,7 +110,7 @@ class sshServer(BaseServer):
                 if 'rootpwd' in item:
                     output.append(item['rootpwd'])
 
-            return "\n".join(output)
+            return "", "\n".join(output)
         except IndexError:
             return 'Delete Failed! Server may be remove!'
 
@@ -74,7 +129,7 @@ class sshServer(BaseServer):
                 if 'rootpwd' in item:
                     output.append(item['rootpwd'])
 
-            return "\n".join(output)
+            return "", "\n".join(output)
         except IndexError:
             return 'Copy Failed! Server may be remove!'
 
@@ -131,7 +186,7 @@ class sshServer(BaseServer):
         else:
             self.args.append(f"'{item['host']}'")
 
-        return " ".join(self.args)
+        return item['name'], " ".join(self.args)
 
     def get(self, keyword):
         queryList = []
@@ -168,7 +223,7 @@ class sshServer(BaseServer):
                 item['title'] = 'Input <enter> to save.'
                 item['valid'] = True
             queryList.append(item)
-        return json.dumps({ 'items': queryList })
+        return "", json.dumps({ 'items': queryList })
 
     def getByIndex(self, keywordIndex):
         keywordIndex = int(keywordIndex)
@@ -185,7 +240,7 @@ class sshServer(BaseServer):
             else:
                 self.args.append(f"'{item['host']}'")
 
-            return " ".join(self.args)
+            return item['name'], " ".join(self.args)
         except IndexError:
             return 'Execute Failed! Server may be remove!'
 

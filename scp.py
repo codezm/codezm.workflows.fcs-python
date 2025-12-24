@@ -6,7 +6,7 @@ from BaseServer import BaseServer
 
 # 环境变量
 separator = os.environ.get("separator", " | ")
-dataFileName = os.environ.get("SSH_DATA_FILE_NAME", "data/ssh-data.json")
+dataFileName = os.environ.get("SSH_DATA_FILE_PATH", "data/ssh-data.json")
 
 class Server(BaseServer):
     data = []
