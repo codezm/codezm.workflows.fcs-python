@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "release": "commit-and-tag-version"
+  },
+  "version": "1.0.2"
+}
