@@ -4,6 +4,7 @@ import sys
 import os
 from BaseServer import BaseServer
 import subprocess
+import shutil
 
 # 环境变量
 os.environ["PATH"] = "/usr/local/bin:/opt/homebrew/bin:" + os.environ.get("PATH", "")
@@ -67,6 +68,10 @@ end tell
         method = getattr(self, methodName, None)
         if method and callable(method):
             name, result = method(*args, **kwargs)
+            if not shutil.which("tmux"):
+              # 如果没有 tmux，退回到基础输出或执行备选逻辑
+              print(result, end='')
+              return
             if TMUX_SESSION_NAME and (methodName == "getByIndex" or methodName == "add"):
                 name = name.replace(".", "_")
                 # check tmux session exist
