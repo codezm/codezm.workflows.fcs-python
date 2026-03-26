@@ -13,7 +13,7 @@ codezm.workflows.fcs-python
 
 ## 使用
 
-[点击下载 alfredworkflow](https://github.com/codezm/codezm.workflows.fcs-python/releases/download/v1.0.1/codezm.workflows.fcs-python.alfredworkflow)
+[点击下载 alfredworkflow](https://raw.githubusercontent.com/codezm/codezm.workflows.fcs-python/main/codezm.workflows.fcs-python.alfredworkflow)
 
 ## 环境变量
 - PYTHON_PATH: python 可执行脚本路径。
