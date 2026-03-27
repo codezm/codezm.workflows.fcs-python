@@ -38,6 +38,9 @@ if {$argc > 2} {
                 "*：" {
                     send "$passwd2\r"
                 }
+		"Password: " {
+		    send "$passwd2\r"
+		}
             }
         }
     }
